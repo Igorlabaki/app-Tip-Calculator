@@ -10,7 +10,7 @@ interface inputProps{
 
 export default function input(props: inputProps) {
 
-    const {state,onChange,dispatch,errorCount} = useCalc()
+    const {state,onChange} = useCalc()
 
     const modeBill   = props.icon   == "icon-dollar.svg"
     const modePeople = props.icon   == "icon-person.svg"

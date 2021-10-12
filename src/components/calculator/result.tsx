@@ -4,11 +4,7 @@ import { useEffect } from "react"
 
 export default function result() {
 
-    const {dispatch,state,errorCount} = useCalc()
-
-    useEffect(() => {
-        errorCount()
-    }, [state.people,state.bill,state.tip])
+    const {dispatch,state} = useCalc()
 
     return (
         <div className="bg-veryDarkCyan w-full p-10 rounded-lg space-y-8 ">

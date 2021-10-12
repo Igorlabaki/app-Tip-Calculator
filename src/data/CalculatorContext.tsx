@@ -1,11 +1,4 @@
-import Calculator from '../model/calculator'
-import { createContext, useReducer} from "react"
-
-interface CalculatorProps {
-    state:          any
-    dispatch:       any
-    onChange(e: any): void
-}
+import { createContext, useEffect, useReducer} from "react"
 interface initialState {
     bill       : number,
     tip        : number,
@@ -13,8 +6,8 @@ interface initialState {
     tipAmount  : number,    
     total      : number, 
     error      : boolean
+    custom      : boolean
 }
-
 
 export const intialState : initialState = {
     bill       : 0,
@@ -22,6 +15,7 @@ export const intialState : initialState = {
     people     : 1,
     tipAmount  : 0,    
     total      : 0, 
+    custom     : false, 
     error      : false
 }
 
@@ -51,6 +45,11 @@ function reducer(state, action){
             return {
                 ...state,
                 tip: 0.50
+            } 
+        case "Custom":
+            return {
+                ...state,
+                custom: !state.custom
             }   
         case "reset":
             return{
@@ -85,6 +84,11 @@ export function CalculatorProvider(props) {
 
     const [state, dispatch] = useReducer(reducer, intialState)
 
+    
+    useEffect(() => {
+        errorCount()
+    }, [state.people,state.bill,state.tip])
+
     function onChange(e){
         const action = {
             input: e.target.name,
@@ -96,7 +100,9 @@ export function CalculatorProvider(props) {
     function errorCount(){
         if(state.people == 0){
             dispatch({type:"error"})
-        }else{
+        }
+        if(state.people != 0){
+            state.error = false
             dispatch({type:"tipAmount"})
             dispatch({type:"totalAmount"})
         }
