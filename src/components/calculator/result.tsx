@@ -4,11 +4,10 @@ import { useEffect } from "react"
 
 export default function result() {
 
-    const {dispatch,state} = useCalc()
+    const {dispatch,state,errorCount} = useCalc()
 
     useEffect(() => {
-        dispatch({type:"tipAmount"})
-        dispatch({type:"totalAmount"})
+        errorCount()
     }, [state.people,state.bill,state.tip])
 
     return (

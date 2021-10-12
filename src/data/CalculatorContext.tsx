@@ -88,16 +88,26 @@ export function CalculatorProvider(props) {
     function onChange(e){
         const action = {
             input: e.target.name,
-            value: e.target.value,
+            value: parseInt(e.target.value),
         }
         dispatch(action)
+    }
+
+    function errorCount(){
+        if(state.people == 0){
+            dispatch({type:"error"})
+        }else{
+            dispatch({type:"tipAmount"})
+            dispatch({type:"totalAmount"})
+        }
     }
    
     return (
         <CalculatorContext.Provider value={{
             state,
             dispatch,
-            onChange
+            onChange,
+            errorCount
         }}>
             {props.children}
         </CalculatorContext.Provider>

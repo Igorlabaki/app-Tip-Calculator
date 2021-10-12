@@ -10,13 +10,11 @@ interface inputProps{
 
 export default function input(props: inputProps) {
 
-    const {state,onChange} = useCalc()
+    const {state,onChange,dispatch,errorCount} = useCalc()
 
     const modeBill   = props.icon   == "icon-dollar.svg"
     const modePeople = props.icon   == "icon-person.svg"
 
-    useEffect(() => {
-    }, [state.people])
 
     return (
         <>
