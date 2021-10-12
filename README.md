@@ -1,8 +1,6 @@
 # Frontend Mentor - Stats preview card component
 
-![localhost_3000_ (3)](https://user-images.githubusercontent.com/62656936/137031568-2f441284-871e-4d1b-aad3-90e32342a895.png)
-
-## Welcome! 👋
+![localhost_3000_ (3)](https://user-images.githubusercontent.com/62656936/137031715-890fc38f-d594-45b3-8007-b5cc4bbcf0a0.png)
 
 ## Overview
 
