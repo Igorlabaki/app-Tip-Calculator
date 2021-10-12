@@ -21,6 +21,9 @@ module.exports = {
         "lightGrayishCyan"  : "hsl(185, 45%, 84%)",
         "lighterGrayishCyan": "hsl(189, 41%, 97%)",
       },
+      borderColor: {
+        "strongCyan"        : "hsl(172, 67%, 45%)"
+      },
       fontSize: {
         24: ['24px', '32px'],
       },

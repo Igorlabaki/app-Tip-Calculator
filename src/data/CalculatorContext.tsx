@@ -24,27 +24,27 @@ function reducer(state, action){
         case "5":
             return {
                 ...state,
-               tip: 0.05,
+               tip: 5,
             }
         case "10":
             return {
                 ...state,
-                tip: 0.10
+                tip: 10
             }
         case "15":
             return {
                 ...state,
-                tip: 0.15
+                tip: 15
                 }
         case "25":
             return {
                 ...state,
-                tip: 0.25
+                tip: 25
             }  
         case "50":
             return {
                 ...state,
-                tip: 0.50
+                tip: 50
             } 
         case "Custom":
             return {
@@ -60,15 +60,11 @@ function reducer(state, action){
                 ...state,
                 error: !state.error
             }
-        case "tipAmount":
+        case "total":
             return{
                 ...state,
-                tipAmount: ((state.bill * state.tip)/ state.people).toFixed(2)
-            }
-        case "totalAmount":
-            return{
-                ...state,
-                total: ((state.bill + (state.bill * state.tip))/ state.people).toFixed(2)
+                tipAmount: ((state.bill * (state.tip/100))/ state.people).toFixed(2),
+                total: ((state.bill + (state.bill * (state.tip/100)))/ state.people).toFixed(2)
             }
         default:
             return {
@@ -98,13 +94,11 @@ export function CalculatorProvider(props) {
     }
 
     function errorCount(){
-        if(state.people == 0){
+        if(state.people == 0 || isNaN(state.people)){
             dispatch({type:"error"})
-        }
-        if(state.people != 0){
+        }else{
             state.error = false
-            dispatch({type:"tipAmount"})
-            dispatch({type:"totalAmount"})
+            dispatch({type:"total"})
         }
     }
    

@@ -19,10 +19,11 @@ export default function input(props: inputProps) {
     return (
         <>
         <div className={`${state.error && modePeople ? "border-2 border-red-600" : ""}
-                flex items-center bg-lightGrayishCyan p-5 rounded-lg `}
+                flex items-center bg-lightGrayishCyan p-5 lg:p-3 rounded-lg `}
             >
-            <img src={`/images/${props.icon}`} alt="" className="h-8" />
+            <img src={`/images/${props.icon}`} alt="" className="h-8 lg:h-5" />
             <input 
+                placeholder="0"
                 name={props.text}
                 type="number" 
                 min="0"
@@ -32,7 +33,7 @@ export default function input(props: inputProps) {
                     outline-none
                     bg-transparent
                     text-right
-                    text-4xl 
+                    text-4xl lg:text-2xl
                     w-11/12
                     font-bold
                     ${modePeople && state.people  == 0 ? "text-lightGrayishCyan" : "text-veryDarkCyan"}
