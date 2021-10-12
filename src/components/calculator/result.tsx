@@ -6,7 +6,11 @@ export default function result() {
 
     const {dispatch,state} = useCalc()
 
- 
+    useEffect(() => {
+        dispatch({type:"tipAmount"})
+        dispatch({type:"totalAmount"})
+    }, [state.people,state.bill,state.tip])
+
     return (
         <div className="bg-veryDarkCyan w-full p-10 rounded-lg space-y-8 ">
             <div className="flex items-center justify-between">
@@ -27,10 +31,12 @@ export default function result() {
                 className="
                     bg-strongCyan w-full rounded-lg py-4 text-3xl font-bold 
                     text-veryDarkCyan"
-                onClick={dispatch({type: "reset"})}
+                    onClick={(e) => {
+                        e.preventDefault
+                        dispatch({type:'reset'})
+                    }}
                 >RESET
-             </button>
-
+            </button>
         </div>
     )
 }

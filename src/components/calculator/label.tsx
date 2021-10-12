@@ -13,10 +13,11 @@ export default function label(props: labelProps) {
     const modePeople = props.text   == "Number of People"
 
     useEffect(() => {
-    }, [state.people])
+    }, [state.people == 0])
 
     return (
         <div className={`${state.error && modePeople ? "flex justify-between": ""} col-span-2`}>
+            {console.log(state.error)}
             <h2 className="text-darkerGrayishCyan font-semibold
              text-3xl col-span-2">
              {props.text}</h2

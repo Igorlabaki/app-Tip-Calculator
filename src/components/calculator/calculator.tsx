@@ -5,7 +5,7 @@ import Result from "./result"
 
 export default function calculator() {
   
-    const tipPorcent = [{number: 5 },{number: 10},{number: 15},{number: 25},{number: 50},{number: "Custom"}]
+    const tipPorcent = [{number: "5" },{number: '10'},{number: '15'},{number: '25'},{number: '50'},{number: "Custom"}]
 
     function renderButton(){
         return tipPorcent.map( (e,i) => {

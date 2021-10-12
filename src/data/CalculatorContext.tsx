@@ -6,11 +6,20 @@ interface CalculatorProps {
     dispatch:       any
     onChange(e: any): void
 }
+interface initialState {
+    bill       : number,
+    tip        : number,
+    people     : number,
+    tipAmount  : number,    
+    total      : number, 
+    error      : boolean
+}
 
-export const intialState = {
+
+export const intialState : initialState = {
     bill       : 0,
     tip        : 0,
-    people     : 0,
+    people     : 1,
     tipAmount  : 0,    
     total      : 0, 
     error      : false
@@ -21,27 +30,27 @@ function reducer(state, action){
         case "5":
             return {
                 ...state,
-               tip: state.tip = 0.05,
+               tip: 0.05,
             }
         case "10":
             return {
                 ...state,
-                tip: state.tip = 10
+                tip: 0.10
             }
         case "15":
             return {
                 ...state,
-               tip: state.tip = 0.15
+                tip: 0.15
                 }
         case "25":
             return {
                 ...state,
-               tip: state.tip = 0.25
+                tip: 0.25
             }  
         case "50":
             return {
                 ...state,
-               tip: state.tip = 0.50
+                tip: 0.50
             }   
         case "reset":
             return{
@@ -55,12 +64,12 @@ function reducer(state, action){
         case "tipAmount":
             return{
                 ...state,
-                tipAmount: (state.bill * state.tip)/ state.people
+                tipAmount: ((state.bill * state.tip)/ state.people).toFixed(2)
             }
         case "totalAmount":
             return{
                 ...state,
-                total: (state.bill + (state.bill * state.tip))/ state.people
+                total: ((state.bill + (state.bill * state.tip))/ state.people).toFixed(2)
             }
         default:
             return {

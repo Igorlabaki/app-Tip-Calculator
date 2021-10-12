@@ -2,14 +2,14 @@ import useCalc from '../../data/hook/useCalc'
 
 
 interface buttonProps{
-    text?: any
+    text?: string
 }
 
 export default function button(props: buttonProps) {
 
     const customMode = props.text == "Custom";
 
-    const {dispatch} = useCalc()
+    const {dispatch,state} = useCalc()
 
     return (
         <button className={
