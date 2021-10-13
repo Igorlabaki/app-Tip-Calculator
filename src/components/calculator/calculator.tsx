@@ -16,9 +16,9 @@ export default function calculator() {
     }
 
     return (
-        <div className="h-full w-full bg-cWhite rounded-2xl p-8 lg:p-4 lg:w-4/6 lg:h-3/6">
-            <div className="space-y-8 lg:flex">
-                <div className="lg:w-1/2 p-5">
+        <div className="h-full w-full bg-cWhite rounded-3xl p-8 lg:p-10 lg:w-4/6 lg:h-auto">
+            <div className="lg:flex h-full">
+                <div className="lg:w-1/2 p-5 space-y-2">
                     <div className="space-y-2">
                         <Label text="Bill"/>
                         <Input icon="icon-dollar.svg" text="bill"/>

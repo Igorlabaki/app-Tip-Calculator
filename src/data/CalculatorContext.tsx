@@ -58,7 +58,9 @@ function reducer(state, action){
         case "error":
             return{
                 ...state,
-                error: !state.error
+                error: !state.error,
+                total: 0,
+                tipAmount: 0
             }
         case "total":
             return{

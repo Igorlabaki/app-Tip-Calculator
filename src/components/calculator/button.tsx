@@ -19,13 +19,13 @@ export default function button(props: buttonProps) {
             { state.custom && customMode ?
                 <input  type="number" min="0" onChange={onChange} name="tip" 
                 className="text-right text-darkerGrayishCyan col-span-1 font-bold
-                py-4 px-8 rounded-lg text-4xl h-full w-full border-4 border-strongCyan outline-none" />
+                py- px-8 rounded-lg text-4xl h-full w-full border-4 border-strongCyan outline-none" />
                 :
                 <button className={
                     `${customMode ?'bg-lightGrayishCyan text-darkGrayishCyan'  : 'bg-veryDarkCyan text-cWhite'} 
                     col-span-1 font-bold
                     py-4 rounded-lg 
-                    text-4xl lg:text-2xl
+                    text-4xl lg:text-3xl
                     focus:text-veryDarkCyan focus:bg-strongCyan`}
                     onClick={(e) => {
                         e.preventDefault

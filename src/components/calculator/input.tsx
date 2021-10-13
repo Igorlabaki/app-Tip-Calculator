@@ -30,10 +30,11 @@ export default function input(props: inputProps) {
                 onChange={onChange}
                 value={ modeBill ? state.bill : state.people}
                 className={`
+                    lg:py-1
                     outline-none
                     bg-transparent
                     text-right
-                    text-4xl lg:text-2xl
+                    text-4xl 
                     w-11/12
                     font-bold
                     ${modePeople && state.people  == 0 ? "text-lightGrayishCyan" : "text-veryDarkCyan"}

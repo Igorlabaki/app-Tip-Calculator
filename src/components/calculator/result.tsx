@@ -7,8 +7,8 @@ export default function result() {
     const {dispatch,state} = useCalc()
 
     return (
-        <div className="bg-veryDarkCyan w-full p-10 rounded-lg sm:space-y-8  lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
-            <div className='space-y-8'>
+        <div className="bg-veryDarkCyan w-full p-10 lg:p-16 rounded-3xl sm:space-y-8  lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
+            <div className='space-y-20'>
                 <div className="flex items-center justify-between">
                     <div>
                         <p className='text-cWhite text-3xl lg:text-2xl'>Tip Amount</p>
