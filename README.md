@@ -11,6 +11,10 @@
 
 ![Screenshot (50)](https://user-images.githubusercontent.com/62656936/137119643-48328a65-003d-4872-87c8-862920785794.png)
 
+### Mobile design:
+
+![localhost_3000_ (5)](https://user-images.githubusercontent.com/62656936/137120948-e0969083-70d2-4816-9144-c16516d968c2.png)
+
 ## Overview
 
 ### The challenge
