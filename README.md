@@ -13,7 +13,7 @@
 
 ### Mobile design:
 
-![localhost_3000_ (5)](https://user-images.githubusercontent.com/62656936/137121074-01ac1940-c16c-4acb-976b-29d315b137cf.png)
+![localhost_3000_ (5)](https://user-images.githubusercontent.com/62656936/137121261-e738d7dc-84c1-42f6-b0c3-bb11c8b5c3c3.png)
 
 ## Overview
 
