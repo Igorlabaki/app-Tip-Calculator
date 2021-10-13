@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Tip calculator app
 
 ### Desktop preview:
 
