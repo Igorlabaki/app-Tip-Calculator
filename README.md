@@ -1,13 +1,13 @@
 # Frontend Mentor - Stats preview card component
 
-###Desktop preview:
+### Desktop preview:
 
 ![Screenshot (51)](https://user-images.githubusercontent.com/62656936/137119514-c4de3402-5951-4aca-85df-3ca28ec65227.png)
 
 
 ![Screenshot (52)](https://user-images.githubusercontent.com/62656936/137119802-b56ef5b6-69f6-4cb0-9005-31aa261e6947.png)
 
-Active states:
+### Active states:
 
 ![Screenshot (50)](https://user-images.githubusercontent.com/62656936/137119643-48328a65-003d-4872-87c8-862920785794.png)
 
