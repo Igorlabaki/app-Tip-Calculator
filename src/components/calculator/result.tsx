@@ -7,7 +7,7 @@ export default function result() {
     const {dispatch,state} = useCalc()
 
     return (
-        <div className="bg-veryDarkCyan w-full p-10 lg:p-16 rounded-3xl sm:space-y-8  lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
+        <div className="bg-veryDarkCyan w-full p-10 lg:p-16 rounded-3xl sm:space-y-8  lg:w-1/2 lg:flex lg:flex-col lg:justify-between pb-10">
             <div className='space-y-20'>
                 <div className="flex items-center justify-between">
                     <div>

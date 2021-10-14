@@ -16,7 +16,7 @@ export default function calculator() {
     }
 
     return (
-        <div className="h-full w-full bg-cWhite rounded-3xl p-8 lg:p-10 lg:w-4/6 lg:h-auto">
+        <div className="h-full w-full bg-cWhite rounded-3xl p-8 lg:p-10 lg:w-4/6 lg:h-auto mb-20">
             <div className="lg:flex h-full">
                 <div className="lg:w-1/2 p-5 space-y-2">
                     <div className="space-y-2">

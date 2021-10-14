@@ -22,11 +22,11 @@ export default function button(props: buttonProps) {
                 py- px-8 rounded-lg text-4xl h-full w-full border-4 border-strongCyan outline-none" />
                 :
                 <button className={
-                    `${customMode ?'bg-lightGrayishCyan text-darkGrayishCyan'  : 'bg-veryDarkCyan text-cWhite'} 
+                    `${customMode ?'bg-lightGrayishCyan text-darkGrayishCyan'  : ''} 
                     col-span-1 font-bold
                     py-4 rounded-lg 
                     text-4xl lg:text-3xl
-                    focus:text-veryDarkCyan focus:bg-strongCyan`}
+                    ${state.tip == props.text ? 'text-veryDarkCyan bg-strongCyan' : "bg-veryDarkCyan text-cWhite"}`}
                     onClick={(e) => {
                         e.preventDefault
                         state.custom = false
