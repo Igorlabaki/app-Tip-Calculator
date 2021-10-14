@@ -11,6 +11,10 @@
 
 ![Screenshot (50)](https://user-images.githubusercontent.com/62656936/137119643-48328a65-003d-4872-87c8-862920785794.png)
 
+### Mobile design:
+
+![localhost_3000_ (5)](https://user-images.githubusercontent.com/62656936/137121261-e738d7dc-84c1-42f6-b0c3-bb11c8b5c3c3.png)
+
 ## Overview
 
 ### The challenge
@@ -22,7 +26,6 @@ Your users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
-- 
 
 Link to the challenge: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 
